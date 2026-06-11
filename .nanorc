@@ -1,0 +1,11 @@
+set linenumbers
+set smarthome
+set tabsize 3
+set unix
+
+set functioncolor italic,gray,black
+set keycolor italic,gray,black
+set numbercolor italic,gray,black
+set selectedcolor black,lightblue
+set statuscolor italic,gray,black
+set titlecolor italic,gray,black

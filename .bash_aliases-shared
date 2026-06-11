@@ -1,0 +1,48 @@
+## Bindings ##
+
+bind 'set bell-style none'
+bind 'set completion-ignore-case on'
+
+bind '"\C-H": backward-kill-word' # Sets CTRL+Backspace to delete whole word to left of caret.
+bind '"\C-i": menu-complete' # Full tab completion for partial words.
+
+
+
+## Aliases ##
+
+# Font Aliases
+alias font-bold='setfont Uni3-TerminusBold28x14'
+
+
+# Git Aliases
+alias ga='git add'
+alias gc='git commit'
+alias gs='git status'
+
+
+# History Aliases
+alias ch='rm --force "$HOME/.bash_history"; history -c'
+
+
+# Host Aliases
+alias c='clear'
+alias e='exit'
+alias l='ls -a --group-directories-first'
+
+
+# OpenSSL Aliases
+alias generate-x509-certificate='openssl req -x509 -days 365 -newkey ec -pkeyopt ec_paramgen_curve:prime256v1 -nodes -keyout "./x509-certificate-private-key.pem" -out "./x509-certificate.pem"'
+
+
+# System Aliases
+alias apt-upgrade='(set -x; sudo apt update) && printf "\n"; (set -x; sudo apt full-upgrade --auto-remove --purge)'
+
+alias u='apt-upgrade'
+
+
+# User Aliases
+alias up='ps --user "$(id --user)"'
+
+
+# Wireless Radio Aliases
+alias block-radios='sudo rfkill block all'
