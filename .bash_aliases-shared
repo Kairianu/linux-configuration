@@ -41,7 +41,7 @@ alias u='apt-upgrade'
 
 
 # User Aliases
-alias up='ps --format "pid,ppid,etime,tname,comm,args" --user "$(id --user)"'
+alias up='ps --format "pid,ppid,%cpu,%mem,etime,tname,comm,args" --user "$(id --user)"'
 
 
 # Wireless Radio Aliases
