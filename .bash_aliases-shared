@@ -45,4 +45,4 @@ alias up='ps --format "pid,ppid,%cpu,%mem,etime,tname,comm,args" --user "$(id --
 
 
 # Wireless Radio Aliases
-alias block-radios='sudo rfkill block all'
+alias block-radios='sudo rfkill block all && sudo rfkill'
